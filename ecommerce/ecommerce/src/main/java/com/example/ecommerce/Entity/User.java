@@ -72,13 +72,4 @@ public class User implements Serializable {
     public void setRecordDeleted(Boolean recordDeleted) {
         this.recordDeleted = recordDeleted;
     }
-
-    public User(Long id, String name, String email, @NonNull String password, String mobile, Boolean recordDeleted) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.password = password;
-        this.mobile = mobile;
-        this.recordDeleted = recordDeleted;
-    }
 }

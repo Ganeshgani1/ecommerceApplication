@@ -5,8 +5,6 @@ import com.example.ecommerce.Pojo.ApiResponse;
 import com.example.ecommerce.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -25,7 +23,7 @@ public class UserServiceImpl implements UserService {
                response.setMessage("Success");
            }else{
                response.setData(details);
-               response.setStatus(String.valueOf(HttpStatus.OK));
+               response.setStatus(String.valueOf(HttpStatus.INTERNAL_SERVER_ERROR));
                response.setMessage("fail");
            }
         }
